@@ -1,0 +1,43 @@
+GET http://localhost:3001/api/persons/
+
+###
+GET http://localhost:3001/api/persons/2
+
+###
+DELETE http://localhost:3001/api/persons/2
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Moro Nani",
+    "number": "113 2323 098"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Kikimaru",
+    "number": ""
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "",
+    "number": "113 2323 098"
+}
+
+###
+PUT http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Moro Nani",
+    "number": "113 2323 098"
+}
